@@ -11,6 +11,14 @@
             gap: 20px;
         }
     }
+    .title {
+        font-size: 26px;
+    }
+    .consultation {
+        &__descr {
+            font-size: 16px;
+        }
+    }
 }
 @media (max-width: 768px) {
     .promo {
@@ -27,7 +35,7 @@
             font-size: 20px;
         }
         &__icons {
-            width: 100%;
+            max-width: 100%;
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
@@ -36,7 +44,18 @@
         }
     }
     .title {
-        font-size: 26px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .consultation {
+        &__descr {
+            font-size: 14px;
+            text-align: center;
+        }
+        .feed-form {
+            margin: 20px auto 0;
+        }
     }
 }
 @media (max-width: 575px) {
@@ -51,13 +70,38 @@
             font-size: 16px;
         }
     }
-    .title {
-        font-size: 20px;
+    .consultation {
+        .feed-form {
+            max-width: 100%;
+        }
     }
 }
 @media (max-width: 320px) {
+    .header {
+        &__phone {
+            margin: 0 auto;
+            font-size: 14px;
+        }
+    }
+    .promo {
+        &__header {
+            line-height: 25px;
+            font-size: 18px;
+        }
+        &__subheader {
+            font-size: 14px;
+        }
+    }
+    .title {
+        font-size: 14px;
+    }
     .button {
         max-width: 100%;
         font-size: 11px;
+    }
+    .consultation {
+        &__descr {
+            font-size: 12px;
+        }
     }
 }
