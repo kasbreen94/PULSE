@@ -103,9 +103,14 @@
         }
         &__img {
             margin-bottom: 10px;
+            margin-right: 0;
+            &:hover {
+                margin-left: 29px;
+            }
         }
         &__text {
             text-align: center;
+            margin-left: 61px;
         }
         &__descr {
             text-align: start;
@@ -155,6 +160,21 @@
             height: 40px;
             margin-top: 10px;
             font-size: 14px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 300px;
+        }
+        &__addr, &__phone {
+            font-size: 16px;
+        }
+        &__social-item {
+
+            height: 25px;
+            img {
+                width: 14px;
+            }
         }
     }
 }
