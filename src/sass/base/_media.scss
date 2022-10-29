@@ -19,6 +19,17 @@
             font-size: 16px;
         }
     }
+    .carousel {
+        .container {
+            width: 600px;
+        }
+    }
+    .prev, .next {
+        display: none;
+    }
+    .tns-nav {
+        display: block !important;
+    }
 }
 @media (max-width: 768px) {
     .promo {
@@ -57,6 +68,11 @@
             margin: 20px auto 0;
         }
     }
+    .carousel {
+        .container {
+            width: 500px;
+        }
+    }
 }
 @media (max-width: 575px) {
     .promo {
@@ -73,6 +89,21 @@
     .consultation {
         .feed-form {
             max-width: 100%;
+        }
+    }
+    .carousel {
+        .container {
+            width: 280px;
+        }
+        .tns-nav {
+            button {
+            width: 20px;
+            height: 15px;
+            }
+            .tns-nav-active {
+                width: 25px;
+                height: 20px;
+            }
         }
     }
 }
@@ -92,6 +123,20 @@
             font-size: 14px;
         }
     }
+    .advantages {
+        padding: 40px 10px 40px;
+        &__wrapper {
+            margin-top: 30px;
+        }
+        &__subtitle {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        &__descr {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    }
     .title {
         font-size: 14px;
     }
@@ -100,8 +145,26 @@
         font-size: 11px;
     }
     .consultation {
+        min-height: 500px;
+        padding: 40px 20px;
         &__descr {
             font-size: 12px;
+        }
+    }
+    .carousel {
+        padding: 40px 20px;
+        .container {
+            width: 160px;
+        }
+        .tns-nav {
+            button {
+            width: 15px;
+            height: 10px;
+            }
+            .tns-nav-active {
+                width: 20px;
+                height: 15px;
+            }
         }
     }
 }

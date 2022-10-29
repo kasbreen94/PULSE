@@ -1,0 +1,59 @@
+.carousel {
+    width: 100%;
+    .container {
+        width: 800px;
+    }
+    padding: 81px 20px;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        img {
+            max-width: 31px;
+            height: 50px;
+        }
+    }
+    .prev {
+        margin-left: 10px;
+    }
+    .next {
+        margin-right: 10px;
+        right: -66px;
+        left: auto;
+    }
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+    .tns-nav {
+        display: none;
+        text-align: center;
+        margin-top: 10px;
+        button {
+            background-color: $red;
+            border-color: rgba(255, 255, 255, 0);
+            border-radius: 50px;
+            width: 30px;
+            height: 20px;
+            margin: 0 10px;
+        }
+        .tns-nav-active {
+            width: 35px;
+            height: 25px;
+        }
+    }
+}
