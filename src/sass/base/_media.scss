@@ -116,6 +116,35 @@
             text-align: start;
         }
     }
+    .feed-form {
+        width: 100%;
+    }
+    .modal {
+        width: 300px;
+        &__close {
+            right: 10px;
+            top: 10px;
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        input {
+            height: 40px;
+        }
+        .button {
+            &_submit {
+                font-size: 14px;
+                height: 40px;
+            }
+        }
+        .error {
+            font-size: 14px;
+        }
+    }
 }
 @media (max-width: 575px) {
     .promo {
@@ -246,6 +275,35 @@
             height: 30px;
             line-height: 30px;
             font-size: 12px;
+        }
+    }
+    .modal {
+        padding: 25px 15px 15px;
+        width: 200px;
+        min-height: 200px;
+        &__close {
+            top: 5px;
+            right: 5px;
+        }
+        &__subtitle {
+            font-size: 12px;
+        }
+        &__descr {
+            font-size: 10px;
+        }
+        .feed-form {
+            input {
+                height: 35px;
+            }
+            .button {
+                &_submit {
+                    font-size: 10px;
+                    height: 35px;
+                }
+            }
+        }
+        .error {
+            font-size: 12 px;
         }
     }
 }
