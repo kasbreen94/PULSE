@@ -1,4 +1,5 @@
 // Slider
+
 const slider = tns({
 	container: '.carousel__inner',
 	items: 1,
@@ -16,13 +17,16 @@ document.querySelector('.next').addEventListener('click', function () {
 });
 
 // Catalog tabs
+
 $(document).ready(function() {
 	$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
 		$(this)
 			.addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
 			.closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
 	});
+
 // Catalog card
+
 	function toggleSlide(item) {
 		$(item).each(function(i) {
 			$(this).on('click', function(e) {
@@ -36,7 +40,7 @@ $(document).ready(function() {
 	toggleSlide('.catalog-item__link');
 	toggleSlide('.catalog-item__back');
 
-	// Modal
+// Modal
 
 	$('[data-modal=consultation]').on('click', function() {
 		$('.overlay, #consultation').fadeIn('slow');
@@ -44,14 +48,18 @@ $(document).ready(function() {
 	$('.modal__close').on('click', function() {
 		$(".overlay, #consultation, #thanks, #order").fadeOut('slow');
 	});
-	// Buy
+
+// Buy
+
 	$(".button_mini").each(function(i) {
 		$(this).on('click', function() {
 			$('#order .modal__descr').text($(".catalog-item__subtitle").eq(i).text());
 			$('.overlay, #order').fadeIn('slow');
 		})
 	});
-	// Validation
+
+// Validation
+
 	function valideForms(form) {
 		$(form).validate({
 			rules: {
@@ -76,9 +84,13 @@ $(document).ready(function() {
 	valideForms('#consultation-form');
 	valideForms('#consultation form');
 	valideForms('#order form');
-	// mask phone
+
+// mask phone
+
 	$('input[name=phone]').mask("+7 (999) 999-99-99")
-	// sending the form to the mail
+
+// sending the form to the mail
+
 	$('form').submit(function(e) {
 		e.preventDefault();
 
@@ -98,5 +110,15 @@ $(document).ready(function() {
 			$('form').trigger('reset')
 		});
 		return false;
+	});
+
+	// Smooth scroll and pageup
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 695) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
 	});
 });
