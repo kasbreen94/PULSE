@@ -117,10 +117,13 @@
         }
     }
     .feed-form {
-        width: 100%;
+        width: 300px;
     }
     .modal {
         width: 300px;
+        .feed-form {
+            width: 100%;
+        }
         &__close {
             right: 10px;
             top: 10px;
