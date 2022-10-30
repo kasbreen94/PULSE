@@ -30,4 +30,11 @@
             color: #ff0000;
         }
     }
+    &__icon {
+        &_animated-heart {
+            &:hover {
+                animation: heartbeat 1.3s cubic-bezier(.1, .7, 1, 1) infinite;
+            }
+        }
+    }
 }

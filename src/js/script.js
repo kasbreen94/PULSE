@@ -121,4 +121,7 @@ $(document).ready(function() {
 			$('.pageup').fadeOut();
 		}
 	});
+
+	// wow animated
+	new WOW().init();
 });
