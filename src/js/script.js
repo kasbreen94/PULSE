@@ -112,7 +112,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	// Smooth scroll and pageup
+	// pageup
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 695) {
@@ -122,6 +122,15 @@ $(document).ready(function() {
 		}
 	});
 
+	//Smooth scroll
+
+	$("a[href='#up']").click(function() {
+		const href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(href).offset().top});
+		return false;
+	});
+
 	// wow animated
+
 	new WOW().init();
 });
